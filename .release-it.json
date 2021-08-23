@@ -3,7 +3,7 @@
     "after:bump": "npx auto-changelog -p"
   },
   "git": {
-    "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs",
+    "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://github.com/iwugod/ReactHoC/tree/release-change-log/changelog-template.hbs",
     "requireCleanWorkingDir": true,
     "requireBranch": "release-change-log",
     "requireUpstream": true,
