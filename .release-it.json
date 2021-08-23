@@ -1,0 +1,48 @@
+{
+  "hooks": {
+    "after:bump": "npx auto-changelog -p"
+  },
+  "git": {
+    "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs",
+    "requireCleanWorkingDir": true,
+    "requireBranch": "release-change-log",
+    "requireUpstream": true,
+    "requireCommits": false,
+    "addUntrackedFiles": false,
+    "commit": true,
+    "commitMessage": "Release ${version}",
+    "commitArgs": [],
+    "tag": true,
+    "tagName": null,
+    "tagMatch": null,
+    "tagAnnotation": "Release ${version}",
+    "tagArgs": [],
+    "push": true,
+    "pushArgs": ["--follow-tags"],
+    "pushRepo": ""
+  },
+  "npm": {
+    "publish": true,
+    "publishPath": ".",
+    "publishArgs": [],
+    "tag": null,
+    "otp": null,
+    "ignoreVersion": false,
+    "skipChecks": false,
+    "timeout": 10
+  },
+  "github": {
+    "release": true,
+    "releaseName": "Release ${version}",
+    "releaseNotes": null,
+    "preRelease": false,
+    "draft": false,
+    "tokenRef": "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",
+    "assets": null,
+    "host": null,
+    "timeout": 0,
+    "proxy": null,
+    "skipChecks": false,
+    "web": false
+  }
+}
